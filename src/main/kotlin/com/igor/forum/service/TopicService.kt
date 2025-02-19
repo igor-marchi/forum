@@ -3,6 +3,7 @@ package com.igor.forum.service
 import com.igor.forum.dto.CreateTopicForm
 import com.igor.forum.dto.TopicView
 import com.igor.forum.dto.UpdateTopicForm
+import com.igor.forum.exception.NotFoundException
 import com.igor.forum.mapper.CreateTopicFormMapper
 import com.igor.forum.mapper.TopicViewMapper
 import com.igor.forum.model.Topic
@@ -22,7 +23,7 @@ class TopicService(
 
     fun detail(id: Long): TopicView {
         val topic = topics.find { it.id == id }
-        if (topic == null) throw IllegalArgumentException("Topic not found")
+        if (topic == null) throw NotFoundException()
         return topicViewMapper.map(topic)
     }
 
@@ -35,7 +36,7 @@ class TopicService(
 
     fun update(updateTopicForm: UpdateTopicForm): TopicView {
         val oldTopic = topics.find { it.id == updateTopicForm.id }
-        if (oldTopic == null) throw IllegalArgumentException("Topic not found")
+        if (oldTopic == null) throw NotFoundException()
         val newTopic =
             oldTopic.copy(
                 title = updateTopicForm.title,
@@ -50,7 +51,7 @@ class TopicService(
 
     fun delete(id: Long) {
         val topic = topics.find { it.id == id }
-        if (topic == null) throw IllegalArgumentException("Topic not found")
+        if (topic == null) throw NotFoundException()
         topics = topics.minus(topic)
     }
 }
