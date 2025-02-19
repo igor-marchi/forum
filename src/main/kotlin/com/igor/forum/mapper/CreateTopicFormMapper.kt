@@ -1,17 +1,17 @@
 package com.igor.forum.mapper
 
-import com.igor.forum.dto.TopicForm
+import com.igor.forum.dto.CreateTopicForm
 import com.igor.forum.model.Topic
 import com.igor.forum.service.CourseService
 import com.igor.forum.service.UserService
 import org.springframework.stereotype.Component
 
 @Component
-class TopicFormMapper(
+class CreateTopicFormMapper(
     private val courseService: CourseService,
     private val userService: UserService,
-) : Mapper<TopicForm, Topic> {
-    override fun map(t: TopicForm): Topic =
+) : Mapper<CreateTopicForm, Topic> {
+    override fun map(t: CreateTopicForm): Topic =
         Topic(
             id = t.id,
             title = t.title,
