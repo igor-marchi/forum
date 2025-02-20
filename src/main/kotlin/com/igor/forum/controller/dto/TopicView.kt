@@ -1,4 +1,4 @@
-package com.igor.forum.dto
+package com.igor.forum.controller.dto
 
 import com.igor.forum.model.TopicStatus
 import java.time.LocalDateTime

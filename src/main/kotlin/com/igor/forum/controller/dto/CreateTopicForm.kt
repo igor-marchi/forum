@@ -1,4 +1,4 @@
-package com.igor.forum.dto
+package com.igor.forum.controller.dto
 
 import jakarta.validation.constraints.NotEmpty
 import jakarta.validation.constraints.NotNull

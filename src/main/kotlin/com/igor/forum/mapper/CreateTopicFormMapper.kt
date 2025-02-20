@@ -1,6 +1,6 @@
 package com.igor.forum.mapper
 
-import com.igor.forum.dto.CreateTopicForm
+import com.igor.forum.controller.dto.CreateTopicForm
 import com.igor.forum.model.Topic
 import com.igor.forum.service.CourseService
 import com.igor.forum.service.UserService

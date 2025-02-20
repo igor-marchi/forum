@@ -1,4 +1,4 @@
-package com.igor.forum.dto
+package com.igor.forum.controller.dto
 
 data class FieldErrorView(
     val field: String,

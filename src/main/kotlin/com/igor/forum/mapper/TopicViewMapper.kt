@@ -1,6 +1,6 @@
 package com.igor.forum.mapper
 
-import com.igor.forum.dto.TopicView
+import com.igor.forum.controller.dto.TopicView
 import com.igor.forum.model.Topic
 import org.springframework.stereotype.Component
 

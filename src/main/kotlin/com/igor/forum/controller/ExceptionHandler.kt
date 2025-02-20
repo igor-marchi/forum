@@ -1,6 +1,7 @@
-package com.igor.forum.exception
+package com.igor.forum.controller
 
-import com.igor.forum.dto.FieldErrorView
+import com.igor.forum.controller.dto.FieldErrorView
+import com.igor.forum.exception.NotFoundException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ProblemDetail
 import org.springframework.web.bind.MethodArgumentNotValidException

@@ -1,8 +1,8 @@
 package com.igor.forum.service
 
-import com.igor.forum.dto.CreateTopicForm
-import com.igor.forum.dto.TopicView
-import com.igor.forum.dto.UpdateTopicForm
+import com.igor.forum.controller.dto.CreateTopicForm
+import com.igor.forum.controller.dto.TopicView
+import com.igor.forum.controller.dto.UpdateTopicForm
 import com.igor.forum.exception.NotFoundException
 import com.igor.forum.mapper.CreateTopicFormMapper
 import com.igor.forum.mapper.TopicViewMapper

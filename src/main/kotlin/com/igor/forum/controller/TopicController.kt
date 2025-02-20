@@ -1,8 +1,8 @@
 package com.igor.forum.controller
 
-import com.igor.forum.dto.CreateTopicForm
-import com.igor.forum.dto.TopicView
-import com.igor.forum.dto.UpdateTopicForm
+import com.igor.forum.controller.dto.CreateTopicForm
+import com.igor.forum.controller.dto.TopicView
+import com.igor.forum.controller.dto.UpdateTopicForm
 import com.igor.forum.service.TopicService
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
